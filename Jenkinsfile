@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Package') {
       steps {
-        sh 'mvn Package'
+        sh 'mvn package'
         archiveArtifacts 'target/spring-boot-sample-data-rest-0.1.0.jar'
       }
     }
